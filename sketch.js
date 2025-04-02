@@ -18,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(0);
   
   // Get the microphone sound level
   let micLevel = mic.getLevel();
@@ -77,7 +77,7 @@ function draw() {
   function drawLetter(contours, offset) {
     if (!contours || contours.length === 0) return;
     
-    fill(0);
+    fill(255);
     stroke(0);
     beginShape();
     // Draw outer contour (first set of vertices) with added offset
